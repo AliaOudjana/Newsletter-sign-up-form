@@ -109,7 +109,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
-  padding: 3rem;
+  padding: 3rem 4rem 3rem 1rem;
 }
 @media (width < 640px) {
   .sign-up-form .text-part {
@@ -119,10 +119,12 @@ body {
 .sign-up-form h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
+  color: var(--blue-dark);
 }
 .sign-up-form p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: var(--blue-dark);
 }
 .sign-up-form ul {
   line-height: 2rem;
@@ -132,6 +134,7 @@ body {
 }
 .sign-up-form ul li {
   padding-left: 0.5rem;
+  color: var(--blue-dark);
 }
 @media (width < 640px) {
   .sign-up-form h1 {
@@ -214,11 +217,13 @@ body {
   font-size: 4rem;
   margin-top: 2rem;
   line-height: 4rem;
+  color: var(--blue-dark);
 }
 .success-msg p {
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 2rem 0;
+  color: var(--blue-dark);
 }
 @media (1100px > width >= 640px) {
   .success-msg h1 {
