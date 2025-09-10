@@ -59,7 +59,7 @@
         display: flex;
         flex-flow: column nowrap;
         gap: 1rem;
-        padding: 3rem;
+        padding: 3rem 4rem 3rem 1rem;
     }
     @include u.small{
         .text-part{
@@ -69,10 +69,12 @@
     h1{
         font-size: 4rem;
         margin-bottom: 1rem;
+        color: var(--blue-dark);
     }
     p{
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        color: var(--blue-dark);
     }
     ul{
         line-height: 2rem;
@@ -81,6 +83,7 @@
         list-style-image: url('../assets/images/icon-list.svg');
         li{
             padding-left: 0.5rem;
+            color: var(--blue-dark);
         }
     }
     @include u.small{
