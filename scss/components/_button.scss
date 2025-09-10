@@ -1,0 +1,17 @@
+@use '../util' as u;
+
+.btn{
+    width: 100%;
+    padding: 1rem;
+    color: var(--white);
+    background: var(--blue-dark);
+    border: none;
+    @include u.rounded-half;
+    font-size: 1rem;
+
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient(to right, var(--gradient-pink), var(--gradient-orange));
+        box-shadow: 0 1rem 2rem 0.5rem var(--gradient-shadow);
+    }
+}

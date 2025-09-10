@@ -1,0 +1,58 @@
+@use '../util' as u;
+
+.success-msg{
+    margin: 10rem 0;
+    padding: 4rem;
+    @include u.huge{
+        width: 30%;
+    }
+    @include u.big{
+        width: 40%;
+    }
+    @include u.medium{
+        width: 50%;
+        padding: 3rem;
+    }
+    @include u.small{
+        width: 100%;
+        margin: 0 0 5rem;
+        padding: 2rem;
+        border-radius: 0;
+        .text-part{
+            margin: 10rem 0 20rem;
+        }
+    }
+    display: none;
+    gap: 2rem;
+    background-color: var(--white);
+    @include u.rounded-2;
+
+    h1{
+        font-size: 4rem;
+        margin-top: 2rem;
+        line-height: 4rem;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin: 2rem 0;
+    }
+    @include u.medium{
+        h1{
+            font-size: 3rem;
+        }
+    }
+    @include u.small{
+        h1{
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        p{
+            font-size: 1rem;
+            line-height: 1.7rem;
+        }
+    }
+    .user-email{
+        font-weight: 700;
+    }
+}

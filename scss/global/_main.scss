@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: var(--blue-grey);
+}
+.attribution{
+    margin: 0 1rem 2rem;
+    text-align: center;
+    color: var(--grey);
+    a{
+        color: var(--white);
+    }
+}

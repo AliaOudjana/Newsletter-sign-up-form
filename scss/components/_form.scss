@@ -1,0 +1,128 @@
+@use '../util' as u;
+
+.sign-up-form{
+    width: 70%;
+    margin: 15rem 0;
+    padding: 1.5rem;
+    @include u.huge{
+        width: 50%;
+        .sign-up-img-desktop{
+            display: block;
+        }
+        .sign-up-img-tablet, .sign-up-img-mobile{
+            display: none;
+        }
+    }
+    @include u.big{
+        .sign-up-img-desktop{
+            display: block;
+            width: min(400px, 50%);
+        }
+        .sign-up-img-tablet, .sign-up-img-mobile{
+            display: none;
+        }
+    }
+    @include u.medium{
+        width: 80%;
+        flex-flow: column nowrap;
+        .sign-up-img-tablet{
+            display: block;
+            width: 100%;
+            padding: 2rem 2rem 0;
+        }
+        .sign-up-img-desktop, .sign-up-img-mobile{
+            display: none;
+        }
+    }
+    @include u.small{
+        width: 100%;
+        flex-flow: column nowrap;
+        margin: 0 0 5rem;
+        padding: 0;
+        border-radius: 0;
+        .sign-up-img-mobile{
+            display: block;
+            width: 100%;
+        }
+        .sign-up-img-desktop, .sign-up-img-tablet{
+            display: none;
+        }
+    }
+    background-color: var(--white);
+    @include u.rounded-2;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .text-part{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        padding: 3rem;
+    }
+    @include u.small{
+        .text-part{
+            padding: 2rem;
+        }
+    }
+    h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    ul{
+        line-height: 2rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        list-style-image: url('../assets/images/icon-list.svg');
+        li{
+            padding-left: 0.5rem;
+        }
+    }
+    @include u.small{
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        ul{
+            line-height: 1.5rem;
+            font-size: 1rem;
+        }
+    }
+    label{
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    .email-err{
+        display: none;
+        float: right;
+        color: var(--red);
+    }
+    input{
+        padding: 1rem 1.5rem;
+        margin-bottom: 1rem;
+        border: 1.2px solid var(--grey);
+        @include u.rounded-half;
+        cursor: pointer;
+
+        &:hover, &:focus{
+            border: 1.2px solid var(--blue-grey);
+            outline: none;
+        }
+    }
+    input.error{
+        border: 1.2px solid var(--red);
+        background-color: var(--red-transparent);
+        color: var(--red);
+        &:hover{
+            border: 1.2px solid var(--red);
+            outline: none;
+        }
+    }
+}
